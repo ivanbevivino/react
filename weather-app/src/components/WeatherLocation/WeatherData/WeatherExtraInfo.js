@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles.css";
 const WeatherExtraInfo = ({ humidity, wind }) => {
 	return (
 		<div className="WExtraInfoContainer">

@@ -1,7 +1,26 @@
 .WDataContainer {
 	background-color: red;
+	width: 400px;
+	height: 100px;
+	line-height: 100px;
 }
 
 .WExtraInfoContainer {
 	background-color: seagreen;
+	width: 40%;
+	display: inline-block;
+}
+
+.WTemperature {
+	background-color: slateblue;
+	width: 60%;
+	display: inline-block;
+}
+
+.Temperature {
+	font-size: 30px;
+	font-weight: bold;
+}
+.TemperatureType {
+	font-weight: bold;
 }
