@@ -9,10 +9,11 @@ import {
 	SNOW,
 	WINDY
 } from "../../../constants/weathers";
+import "./styles.css";
 
 const WeatherData = () => {
 	return (
-		<div>
+		<div className="WDataContainer">
 			<WeatherTemperature
 				temperature={25}
 				wheatherState={SUN}
