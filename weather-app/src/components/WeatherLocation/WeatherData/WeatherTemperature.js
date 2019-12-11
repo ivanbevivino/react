@@ -25,9 +25,21 @@ const WeatherTemperature = props => {
 	const getWeatherIcon = wheatherState => {
 		const icon = icons[wheatherState];
 		if (icon) {
-			return <WeatherIcons name={icon} size={iconSize}></WeatherIcons>;
+			return (
+				<WeatherIcons
+					className="wicon"
+					name={icon}
+					size={iconSize}
+				></WeatherIcons>
+			);
 		} else {
-			return <WeatherIcons name={"day-sunny"} size={iconSize}></WeatherIcons>;
+			return (
+				<WeatherIcons
+					className="wicon"
+					name={"day-sunny"}
+					size={iconSize}
+				></WeatherIcons>
+			);
 		}
 	};
 

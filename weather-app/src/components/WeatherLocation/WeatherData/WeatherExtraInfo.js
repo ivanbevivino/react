@@ -3,7 +3,8 @@ const WeatherExtraInfo = ({ humidity, wind }) => {
 	return (
 		<div className="WExtraInfoContainer">
 			{" "}
-			<span>{`humidity: ${humidity}%`} </span> <span>{`Wind: ${wind}`}</span>
+			<span className="ExtraInfoText">{`humidity: ${humidity}%`} </span>{" "}
+			<span className="ExtraInfoText">{`Wind: ${wind}`}</span>
 		</div>
 	);
 };
