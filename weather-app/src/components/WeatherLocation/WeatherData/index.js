@@ -11,14 +11,15 @@ import {
 } from "../../../constants/weathers";
 import "./styles.css";
 
-const WeatherData = () => {
+const WeatherData = ({ data }) => {
+	const { humidity, temperature, weatherState, wind } = data;
 	return (
 		<div className="WDataContainer">
 			<WeatherTemperature
-				temperature={25}
-				wheatherState={SUN}
+				temperature={temperature}
+				wheatherState={weatherState}
 			></WeatherTemperature>
-			<WeatherExtraInfo humidity={80} wind={"10 m/s"}></WeatherExtraInfo>
+			<WeatherExtraInfo humidity={humidity} wind={wind}></WeatherExtraInfo>
 		</div>
 	);
 };
